@@ -124,7 +124,7 @@ public class CryptoProvider {
                 KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT)
                 .setKeySize(DEFAULT_KEY_SIZE)
                 .setBlockModes(KeyProperties.BLOCK_MODE_CBC)
-                .setUserAuthenticationRequired(true)
+                .setUserAuthenticationRequired(false)
                 .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_PKCS7)
                 .build());
         return keyGenerator.generateKey();
